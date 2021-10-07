@@ -1,0 +1,44 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400";
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+//variables
+$main-color: rgb(253, 203, 138);
+$lighter-main-color: lighten($main-color, 15%);
+$darker-main-color: darken($main-color, 30%);
+$yellow-color: #fbff00;
+$red-color: #e74c3c;
+$white-color: white;
+$green-color: #2ecc71;
+
+$border-radius: 10px;
+$button-padding: 15px;
+
+
+//Mixins
+@mixin button-common() {
+    color: $white-color;
+    background-color: transparent;
+    outline:0;
+    font-family: 'Ubuntu', sans-serif;
+    border:0;
+    min-width: 150px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2em;
+    margin: 2px;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin button-filled($color) {
+    background-color: $color;
+    
+    &:hover {
+        background-color: darken($color, 10%);
+    }  
+}

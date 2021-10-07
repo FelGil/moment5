@@ -1,0 +1,99 @@
+@import 'basic';
+
+
+body {
+    background-color: $main-color;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right, $darker-main-color, $lighter-main-color);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+}
+
+#updateCourse {
+    display: none;
+}
+
+.courseWrapper {    
+    border-bottom: 4px solid white;
+}
+
+#courses {
+    background-color: $lighter-main-color;
+}
+
+.courseWrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.col1 {
+    float: left;
+    width: 50px;
+    padding: 10px; 
+}
+.col2 {
+    float: left;
+    width: 200px;
+    padding: 10px; 
+}
+.col3 {
+    float: left;
+    width: 100px;
+    padding: 10px; 
+}
+.col4 {
+    float: left;
+    width: 100px;
+    padding: 10px; 
+}
+.col5 {
+    float: left;
+    width: 300px;
+    padding: 10px; 
+}
+
+input {
+    @include border-radius($border-radius);
+    padding: 8px;
+    min-width: 8%;
+    margin-bottom: 1%;
+    margin-top: 10px;
+}
+
+.btn_del {
+    width: 65px;
+    @include button-common();
+    @include border-radius($border-radius);
+    @include button-filled($red-color);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.btn_update {
+    width: 65px;
+    @include button-common();
+    @include border-radius($border-radius);
+    @include button-filled($yellow-color);
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: black
+}
+
+.btn_add_submit {
+    @include button-common();
+    @include border-radius($border-radius);
+    @include button-filled($green-color);
+}
+
+.btn_update_submit {
+    @include button-common();
+    @include border-radius($border-radius);
+    @include button-filled($yellow-color);
+    color: black
+}

@@ -1,0 +1,164 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400";
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+body {
+  background-color: #fdcb8a;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to right, #ea8604, #feecd5);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+}
+
+#updateCourse {
+  display: none;
+}
+
+.courseWrapper {
+  border-bottom: 4px solid white;
+}
+
+#courses {
+  background-color: #feecd5;
+}
+
+.courseWrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col1 {
+  float: left;
+  width: 50px;
+  padding: 10px;
+}
+
+.col2 {
+  float: left;
+  width: 200px;
+  padding: 10px;
+}
+
+.col3 {
+  float: left;
+  width: 100px;
+  padding: 10px;
+}
+
+.col4 {
+  float: left;
+  width: 100px;
+  padding: 10px;
+}
+
+.col5 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+}
+
+input {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 8px;
+  min-width: 8%;
+  margin-bottom: 1%;
+  margin-top: 10px;
+}
+
+.btn_del {
+  width: 65px;
+  color: white;
+  background-color: transparent;
+  outline: 0;
+  font-family: "Ubuntu", sans-serif;
+  border: 0;
+  min-width: 150px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 1.2em;
+  margin: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #e74c3c;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.btn_del:hover {
+  background-color: #d62c1a;
+}
+
+.btn_update {
+  width: 65px;
+  color: white;
+  background-color: transparent;
+  outline: 0;
+  font-family: "Ubuntu", sans-serif;
+  border: 0;
+  min-width: 150px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 1.2em;
+  margin: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fbff00;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: black;
+}
+.btn_update:hover {
+  background-color: #c9cc00;
+}
+
+.btn_add_submit {
+  color: white;
+  background-color: transparent;
+  outline: 0;
+  font-family: "Ubuntu", sans-serif;
+  border: 0;
+  min-width: 150px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 1.2em;
+  margin: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #2ecc71;
+}
+.btn_add_submit:hover {
+  background-color: #25a25a;
+}
+
+.btn_update_submit {
+  color: white;
+  background-color: transparent;
+  outline: 0;
+  font-family: "Ubuntu", sans-serif;
+  border: 0;
+  min-width: 150px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 1.2em;
+  margin: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fbff00;
+  color: black;
+}
+.btn_update_submit:hover {
+  background-color: #c9cc00;
+}

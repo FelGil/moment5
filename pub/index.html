@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Moment5</title>
+    <link rel="stylesheet" type="text/css" href="css/sass.css">
+</head>
+<body>
+    <header>
+        <h1>Moment 5 - Kurser</h1>
+    </header>
+
+    <div id="container">
+        <H2>Kurser</H2>
+        <div id="courses">
+            <!-- IMPORT COURSES FROM DATABASE VIA REST-->
+        </div>
+
+        <h2 id="formheader">Lägg till kurser</h2>
+        <form>
+            <label for="code">Kod:</label>
+            <br>
+            <input type="text" name="coursecode" id="coursecode">
+            <br>
+            <label for="coursename">Kursnamn:</label>
+            <br>
+            <input type="text" name="coursename" id="coursename">
+            <br>
+            <label for="courseprogression">Progression:</label>
+            <br>
+            <input type="text" name="courseprogression" id="courseprogression">
+            <br>
+            <label for="coursesyllabus">Kursplan:</label>
+            <br>
+            <input type="text" name="coursesyllabus" id="coursesyllabus">
+            <br><br>
+            <input type="submit" class="btn_add_submit" value="Lägg till kurs" id="addCourse" >
+            <input type="submit" class="btn_update_submit" value="Ändra kurs" id="updateCourse" >
+        </form>
+
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+</html>
