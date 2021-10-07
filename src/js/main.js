@@ -41,8 +41,8 @@ function getCourses() {
     </div>
     `;
 
-
-    fetch('http://localhost/moment5ws/api')
+    // local url http://localhost/moment5ws/api
+    fetch('https://studenter.miun.se/~fegi2000/writeable/moment5ws/api.php')
     .then(response => response.json())
     .then(data => {
         data.forEach(course => {
@@ -74,7 +74,8 @@ function getCourses() {
 //function to delete a specific course
 function deleteCourse(id) {
 
-    fetch('http://localhost/moment5ws/api?id=' + id, {
+    //local url http://localhost/moment5ws/api?id=
+    fetch('https://studenter.miun.se/~fegi2000/writeable/moment5ws/api.php?id=' + id, {
         method: 'DELETE',
     })
     .then(response => response.text())
@@ -96,7 +97,8 @@ function createCourse() {
 
     let conCourse = {'code': code, 'name': name, 'progression': progression, 'syllabus': syllabus};
     
-    fetch('http://localhost/moment5ws/api', {
+    //local url http://localhost/moment5ws/api
+    fetch('https://studenter.miun.se/~fegi2000/writeable/moment5ws/api.php', {
         method: 'POST',
         headers: {
             "Content-type": "application/json; charset=UTF-8"
@@ -120,8 +122,8 @@ function setFormCourse(id){
     formheaderEl.innerHTML = "Ändra kurs";
 
     idHolder = id;
-
-    fetch('http://localhost/moment5ws/api?id=' + id)
+    //local urlhttp://localhost/moment5ws/api?id=
+    fetch('https://studenter.miun.se/~fegi2000/writeable/moment5ws/api.php?id=' + id)
     .then(response => response.json())
     .then(data => {
         data.forEach(course => {
@@ -143,8 +145,9 @@ function updateCourse(){
     let syllabus = syllabusEl.value;
     
     let conCourse = {'id': idHolder, 'code': code, 'name': name, 'progression': progression, 'syllabus': syllabus};
-    console.log(conCourse);
-    fetch('http://localhost/moment5ws/api?id=' + idHolder, {
+    
+    //local url http://localhost/moment5ws/api?id=
+    fetch('https://studenter.miun.se/~fegi2000/writeable/moment5ws/api.php?id=' + idHolder, {
         method: 'PUT',
         body: JSON.stringify(conCourse),
     })
