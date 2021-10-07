@@ -1,7 +1,7 @@
 # Moment 5
 
 Det är är en frontend-lösning för att kunna rada upp kurser till Miuns universitet.\
-Du kan både lägga upp nya kurser, uppdatera, samt radera befintliga kurser.\
+Du kan både lägga upp nya kurser, uppdatera, samt radera befintliga kurser.
 
 Front end that connects to a REST-API that is located here:\
 https://studenter.miun.se/~fegi2000/writeable/moment5ws/api.php
